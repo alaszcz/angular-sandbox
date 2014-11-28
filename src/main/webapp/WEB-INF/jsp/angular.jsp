@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
@@ -11,10 +11,19 @@
 		<script type="text/javascript" src="<c:url value="/javascript/angular.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/jquery-2.1.1.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/bootstrap.js"/>"></script>
-		<link type="text/css" href="<c:url value="/stylesheets/bootstrap.css"/>" rel="stylesheet" media="screen, projection"/>
+		<link type="text/css" href="<c:url value="/stylesheets/bootstrap.css"/>" rel="stylesheet" media="screen, projection" />
 	</head>
 	<body>
-		<p>Nothing here {{'yet' + '!'}}</p>
-		<p>1 + 2 = {{ 1 + 2 }}</p>
+		<ul>
+			<li>
+				<span>Nexus S</span>
+				<p>Fast just got faster with Nexus S.</p>
+			</li>
+			<li>
+				<span>Motorola XOOM™ with Wi-Fi</span>
+				<p>The Next, Next Generation tablet.</p>
+			</li>
+		</ul>
+		<p>Total number of phones: 2</p>
 	</body>
 </html>
