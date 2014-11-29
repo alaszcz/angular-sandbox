@@ -13,6 +13,7 @@
 		<script type="text/javascript" src="<c:url value="/javascript/bootstrap.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/controllers.js"/>"></script>
 		<link type="text/css" href="<c:url value="/stylesheets/bootstrap.css"/>" rel="stylesheet" media="screen, projection" />
+		<link type="text/css" href="<c:url value="/stylesheets/app.css"/>" rel="stylesheet" media="screen, projection" />
 	</head>
 	<body>
 		<div class="container-fluid">
@@ -40,6 +41,7 @@
 			</div>
 			<p>Your search query: {{query}}</p>
 			<p>Total number of phones: {{phones.length}}</p>
+			<pre>{{phones | filter:query | orderBy:orderProp | json}}</pre>
 		</div>
 	</body>
 </html>
