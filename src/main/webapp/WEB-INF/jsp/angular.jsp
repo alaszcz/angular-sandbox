@@ -20,12 +20,19 @@
 			<div class="row">
 				<div class="col-md-2">
 					<!--Sidebar content-->
-					Search: <input ng-model="query">
+					Search: <input ng-model="query"><br/>
+					Sort by:
+					<select ng-model="orderProp">
+						<option value="name">Alphabetical</option>
+						<option value="age">Newest</option>
+						<option value="-age">Oldest</option>
+					</select>
 				</div>
 				<div class="col-md-10">
 					<!--Body content-->
 					<ul class="phones">
-						<li ng-repeat="phone in phones | filter:query">{{phone.name}}
+						<li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+							<span>{{phone.name}}</span>
 							<p>{{phone.snippet}}</p>
 						</li>
 					</ul>
