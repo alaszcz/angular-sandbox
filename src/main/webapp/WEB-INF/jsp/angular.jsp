@@ -10,11 +10,13 @@
 		<title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title>
 		<script type="text/javascript" src="<c:url value="/javascript/angular.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/angular-route.js"/>"></script>
+		<script type="text/javascript" src="<c:url value="/javascript/angular-resource.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/jquery-2.1.1.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/bootstrap.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/app.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/controllers.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/filters.js"/>"></script>
+		<script type="text/javascript" src="<c:url value="/javascript/services.js"/>"></script>
 		<link type="text/css" href="<c:url value="/stylesheets/app.css"/>" rel="stylesheet" media="screen, projection" />
 		<link type="text/css" href="<c:url value="/stylesheets/bootstrap.css"/>" rel="stylesheet" media="screen, projection" />
 	</head>
