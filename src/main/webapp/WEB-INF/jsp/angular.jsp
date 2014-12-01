@@ -14,10 +14,18 @@
 		<script type="text/javascript" src="<c:url value="/javascript/bootstrap.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/app.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/controllers.js"/>"></script>
+		<script type="text/javascript" src="<c:url value="/javascript/filters.js"/>"></script>
 		<link type="text/css" href="<c:url value="/stylesheets/bootstrap.css"/>" rel="stylesheet" media="screen, projection" />
 		<link type="text/css" href="<c:url value="/stylesheets/app.css"/>" rel="stylesheet" media="screen, projection" />
 	</head>
 	<body>
+		<ul>
+			<li>{{ "lower cap string" | uppercase }}</li>
+			<li>{{ {foo: "bar", baz: 23} | json }}</li>
+			<li>{{ 1304375948024 | date }}</li>
+			<li>{{ 1304375948024 | date:"MM/dd/yyyy @ h:mma" }}</li>
+			<li><input ng-model="userInput"> Uppercased: {{ userInput | uppercase }}</li>
+		</ul>
 		<div ng-view></div>
 	</body>
 </html>

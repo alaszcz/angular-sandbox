@@ -17,6 +17,12 @@
 		</dl>
 	</li>
 	<li>
+		<dl>
+			<dt>{{phone.connectivity.infrared | checkmark}} Infrared</dt>
+			<dt>{{phone.connectivity.gps | checkmark}} GPS</dt>
+		</dl>
+	</li>
+	<li>
 		<span>Additional Features</span>
 		<dd>{{phone.additionalFeatures}}</dd>
 	</li>
