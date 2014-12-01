@@ -9,40 +9,15 @@
 		<meta charset="utf-8">
 		<title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title>
 		<script type="text/javascript" src="<c:url value="/javascript/angular.js"/>"></script>
+		<script type="text/javascript" src="<c:url value="/javascript/angular-route.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/jquery-2.1.1.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/bootstrap.js"/>"></script>
+		<script type="text/javascript" src="<c:url value="/javascript/app.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/controllers.js"/>"></script>
 		<link type="text/css" href="<c:url value="/stylesheets/bootstrap.css"/>" rel="stylesheet" media="screen, projection" />
 		<link type="text/css" href="<c:url value="/stylesheets/app.css"/>" rel="stylesheet" media="screen, projection" />
 	</head>
 	<body>
-		<div class="container-fluid">
-			<p>Hello, {{name}}!</p>
-			<div class="row">
-				<div class="col-md-2">
-					<!--Sidebar content-->
-					Search: <input ng-model="query"><br/>
-					Sort by:
-					<select ng-model="orderProp">
-						<option value="name">Alphabetical</option>
-						<option value="age">Newest</option>
-						<option value="-age">Oldest</option>
-					</select>
-				</div>
-				<div class="col-md-10">
-					<!--Body content-->
-					<ul class="phones">
-						<li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
-							<a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="../{{phone.imageUrl}}"></a>
-							<a href="#/phones/{{phone.id}}">{{phone.name}}</a>
-							<p>{{phone.snippet}}</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<p>Your search query: {{query}}</p>
-			<p>Total number of phones: {{phones.length}}</p>
-			<pre>{{phones | filter:query | orderBy:orderProp | json}}</pre>
-		</div>
+		<div ng-view></div>
 	</body>
 </html>
