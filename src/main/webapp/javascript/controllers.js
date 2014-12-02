@@ -21,8 +21,4 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Ph
 				$scope.mainImageUrl = imageUrl;
 			};
 
-			$scope.hello = function(name) {
-			    alert('Hello ' + (name || 'world') + '!');
-			};
-
 		} ]);

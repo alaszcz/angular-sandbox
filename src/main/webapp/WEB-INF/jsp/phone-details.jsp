@@ -1,11 +1,16 @@
-<img ng-src="../{{mainImageUrl}}" class="phone">
+<div class="phone-images">
+	<img ng-src="../{{img}}" class="phone" ng-repeat="img in phone.images" ng-class="{active:mainImageUrl==img}">
+</div>
+
 
 <h1>{{phone.name}}</h1>
 
 <p>{{phone.description}}</p>
 
 <ul class="phone-thumbs">
-	<li ng-repeat="img in phone.images"><img ng-src="../{{img}}" ng-click="setImage(img)"></li>
+	<li ng-repeat="img in phone.images">
+		<img ng-src="../{{img}}" ng-mouseenter="setImage(img)">
+	</li>
 </ul>
 
 <ul class="specs">
@@ -27,4 +32,3 @@
 		<dd>{{phone.additionalFeatures}}</dd>
 	</li>
 </ul>
-<button ng-click="hello('Adam')">Hello</button>
