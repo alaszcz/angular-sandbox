@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class AngularController {
 
+	@RequestMapping(value = "/")
+	public String welcome(ModelMap modelMap) throws Exception {
+ 		return "index";
+ 	}
+ 
 	@RequestMapping(value = "/angstart")
 	public String add(ModelMap modelMap) throws Exception {
  		return "angular";

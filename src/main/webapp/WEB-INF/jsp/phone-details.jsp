@@ -1,5 +1,5 @@
 <div class="phone-images">
-	<img ng-src="../{{img}}" class="phone" ng-repeat="img in phone.images" ng-class="{active:mainImageUrl==img}">
+	<img ng-src="{{img}}" class="phone" ng-repeat="img in phone.images" ng-class="{active:mainImageUrl==img}">
 </div>
 
 
@@ -9,7 +9,7 @@
 
 <ul class="phone-thumbs">
 	<li ng-repeat="img in phone.images">
-		<img ng-src="../{{img}}" ng-mouseenter="setImage(img)">
+		<img ng-src="{{img}}" ng-mouseenter="setImage(img)">
 	</li>
 </ul>
 
