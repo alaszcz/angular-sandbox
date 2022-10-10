@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title>
-		<script type="text/javascript" src="<c:url value="/javascript/jquery-1.11.1.js"/>"></script>
+		<script type="text/javascript" src="<c:url value="/javascript/jquery-1.12.4.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/angular.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/angular-route.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/javascript/angular-resource.js"/>"></script>
